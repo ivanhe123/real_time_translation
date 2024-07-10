@@ -23,8 +23,8 @@ ckpt_converter = 'checkpoints_v2/converter'
 device = "cuda:0"
 output_dir = 'outputs_v2'
 print("loading whisper")
-processor = AutoProcessor.from_pretrained("./whisper-large-v3")
-model = AutoModelForSpeechSeq2Seq.from_pretrained("./whisper-large-v3").to("cuda:0")
+processor = AutoProcessor.from_pretrained("openai/whisper-large-v3")
+model = AutoModelForSpeechSeq2Seq.from_pretrained("openai/whisper-large-v3").to("cuda:0")
 pipe = pipeline("automatic-speech-recognition", model=model, tokenizer=processor.tokenizer, feature_extractor=processor.feature_extractor, torch_dtype=torch.float16, chunk_length_s=30, batch_size=24, device="cuda:0")
 model = model.half()
 
