@@ -3,7 +3,7 @@
 # Real-Time Translation
 
 ## Overview
-This project aims to provide real-time translation services using a combination of speech recognition, machine translation, and text-to-speech technologies. It integrates several models and tools to achieve seamless communication across different languages.
+This project aims to provide real-time translation services using a combination of speech recognition, machine translation, and text-to-speech technologies. It integrates several models and tools to achieve seamless communication across Chinese and English languages
 
 ## Repository Structure
 - `melo/`
